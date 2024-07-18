@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Transactions</title>
+        <link href="images/fav.ico" rel="icon" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/main.css">
+        </head>
+<body class="bg-primary-subtle">
+  <div class=" mt-0">
+    <h1 class="mb-4 mt-0 text-center fw-bold bg-primary text-white p-5">Customer Transactions</h1>
+    <div class="container ">
+      <div class="form-group">
+        <label for="customerFilter">Filter by Customer Name</label>
+        <input type="text" id="customerFilter" class="form-control" placeholder="Enter customer name">
+      </div>
+      <div class="form-group">
+        <label for="amountFilter">Filter by Transaction Amount</label>
+        <input type="number" id="amountFilter" class="form-control mb-4" placeholder="Enter minimum amount">
+      </div>
+      <table id="customerTable" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here by script.js -->
+        </tbody>
+      </table>
+      <canvas id="transactionChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
+
